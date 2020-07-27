@@ -14,8 +14,16 @@ spring:
       max-pool-prepared-statement-per-connection-size: 20
       time-between-eviction-runs-millis: 60000
       min-evictable-idle-time-millis: 300000
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: imall-member
 mybatis-plus:
   config-location: classpath:/mapper/**/*.xml
   global-config:
     db-config:
       id-type: auto
+server:
+  port: 7000

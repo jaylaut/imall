@@ -31,6 +31,11 @@ public class CategoryBoundsController {
     @Autowired
     private CategoryBoundsService categoryBoundsService;
 
+    @RequestMapping("/test01")
+    public String testNacos(){
+        return "hello ,nacos";
+    }
+
     /**
      * 列表
      */
